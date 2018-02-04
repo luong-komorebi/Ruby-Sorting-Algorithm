@@ -16,6 +16,14 @@ module SortingAlgo
     def selection_sort
       SortingAlgo::SelectionSort.sort(@arr)
     end
+
+    def insertion_sort
+      SortingAlgo::InsertionSort.sort(@arr)
+    end
+
+    def merge_sort
+      SortingAlgo::MergeSort.sort(@arr)
+    end
   end
 end
 
@@ -23,3 +31,5 @@ Sort = SortingAlgo::Main.new
 
 print Sort.bubble_sort
 print Sort.selection_sort
+print Sort.insertion_sort
+print Sort.merge_sort
