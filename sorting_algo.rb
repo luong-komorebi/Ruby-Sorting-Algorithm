@@ -24,6 +24,10 @@ module SortingAlgo
     def merge_sort
       SortingAlgo::MergeSort.sort(@arr)
     end
+
+    def quick_sort
+      SortingAlgo::QuickSort.sort(@arr)
+    end
   end
 end
 
@@ -33,3 +37,4 @@ print Sort.bubble_sort
 print Sort.selection_sort
 print Sort.insertion_sort
 print Sort.merge_sort
+print Sort.quick_sort
