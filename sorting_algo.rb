@@ -28,6 +28,10 @@ module SortingAlgo
     def quick_sort
       SortingAlgo::QuickSort.sort(@arr)
     end
+
+    def radix_sort
+      SortingAlgo::RadixSort.sort(@arr)
+    end
   end
 end
 
@@ -38,3 +42,4 @@ print Sort.selection_sort
 print Sort.insertion_sort
 print Sort.merge_sort
 print Sort.quick_sort
+print Sort.radix_sort
