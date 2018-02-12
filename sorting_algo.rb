@@ -42,7 +42,7 @@ Sort = SortingAlgo::Main.new
 $stdout = File.new('benchmark.log', 'w')
 $stdout.sync = true
 
-Benchmark.bm(100) do |x|
+Benchmark.bm(70) do |x|
   x.report("Bubble sort 100 elements") { Sort.bubble_sort(100)}
   x.report("Selection sort 100 elements") { Sort.selection_sort(100) }
   x.report("Insertion sort 100 elements") { Sort.insertion_sort(100) }
@@ -67,9 +67,9 @@ Benchmark.bm(100) do |x|
   x.report("Merge sort 10000 elements") { Sort.merge_sort(10000) }
   x.report("Quick sort 10000 elements") { Sort.quick_sort(10000) }
   x.report("Radix sort 10000 elements") { Sort.radix_sort(10000) }
-  x.report("Selection sort 11000 elements") { Sort.selection_sort(11000) }
-  x.report("Insertion sort 11000 elements") { Sort.insertion_sort(11000) }
-  x.report("Merge sort 11000 elements") { Sort.merge_sort(11000) }
-  x.report("Quick sort 11000 elements") { Sort.quick_sort(11000) }
-  x.report("Radix sort 11000 elements") { Sort.radix_sort(11000) }
+  x.report("Selection sort 20000 elements") { Sort.selection_sort(20000) }
+  x.report("Insertion sort 20000 elements") { Sort.insertion_sort(20000) }
+  x.report("Merge sort 20000 elements") { Sort.merge_sort(20000) }
+  x.report("Quick sort 20000 elements") { Sort.quick_sort(20000) }
+  x.report("Radix sort 20000 elements") { Sort.radix_sort(20000) }
 end
