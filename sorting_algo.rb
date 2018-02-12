@@ -49,24 +49,29 @@ Benchmark.bm(70) do |x|
   x.report("Merge sort 100 elements") { Sort.merge_sort(100) }
   x.report("Quick sort 100 elements") { Sort.quick_sort(100) }
   x.report("Radix sort 100 elements") { Sort.radix_sort(100) }
+
   x.report("Bubble sort 1000 elements") { Sort.bubble_sort(1000) }
   x.report("Selection sort 1000 elements") { Sort.selection_sort(1000) }
   x.report("Insertion sort 1000 elements") { Sort.insertion_sort(1000) }
   x.report("Merge sort 1000 elements") { Sort.merge_sort(1000) }
   x.report("Quick sort 1000 elements") { Sort.quick_sort(1000) }
   x.report("Radix sort 1000 elements") { Sort.radix_sort(1000) }
+
   x.report("Bubble sort 5000 elements ") { Sort.bubble_sort(5000) }
   x.report("Selection sort 5000 elements") { Sort.selection_sort(5000) }
   x.report("Insertion sort 5000 elements") { Sort.insertion_sort(5000) }
   x.report("Merge sort 5000 elements") { Sort.merge_sort(5000) }
   x.report("Quick sort 5000 elements") { Sort.quick_sort(5000) }
   x.report("Radix sort 5000 elements") { Sort.radix_sort(5000) }
+
   x.report("Bubble sort 10000 elements") { Sort.bubble_sort(10000) }
   x.report("Selection sort 10000 elements") { Sort.selection_sort(10000) }
   x.report("Insertion sort 10000 elements") { Sort.insertion_sort(10000) }
   x.report("Merge sort 10000 elements") { Sort.merge_sort(10000) }
   x.report("Quick sort 10000 elements") { Sort.quick_sort(10000) }
   x.report("Radix sort 10000 elements") { Sort.radix_sort(10000) }
+  
+  x.report("Bubble sort 20000 elements") { Sort.bubble_sort(20000) }
   x.report("Selection sort 20000 elements") { Sort.selection_sort(20000) }
   x.report("Insertion sort 20000 elements") { Sort.insertion_sort(20000) }
   x.report("Merge sort 20000 elements") { Sort.merge_sort(20000) }
